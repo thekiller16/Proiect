@@ -87,8 +87,8 @@ void AddMenus(HWND hwnd) {
 	AppendMenuW(hMenubar, MF_POPUP, (UINT_PTR)hMenu, L"&Optiuni");
 	SetMenu(hwnd, hMenubar);
 }
-#define IDC_MAIN_BUTTON	101			// Button identifier
-#define IDC_MAIN_EDIT	102			// Edit box identifier
+#define IDC_MAIN_BUTTON	101			
+#define IDC_MAIN_EDIT	102			
 HWND hEdit;
 
 LRESULT CALLBACK WinProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
@@ -184,7 +184,7 @@ LRESULT CALLBACK WinProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		SendMessage(hEdit,
 			WM_SETTEXT,
 			NULL,
-			(LPARAM)"Insert text here...");
+			(LPARAM)"");
 
 		// Create a push button
 		HWND hWndButton = CreateWindowEx(NULL,
