@@ -1,4 +1,10 @@
 #include <windows.h>
+typedef struct TIP_NOD {
+	char *cheie;
+	int prioritate;
+	struct TIP_NOD *stg, *dr;
+};
+TIP_NOD *rad;
 const char g_szClassName[] = "myWindowClass";
 HWND textfield, button, textbox;
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
