@@ -131,7 +131,7 @@ void write() {
 	font = CreateFontIndirect(&LogFont);
 	SelectObject(hDC, font);
 	SetTextColor(hDC, qLineColor);
-	TextOut(hDC, 10, 160, "Pentru adaugare", 15);
+	TextOut(hDC, 10, 160, "Adaugare", 8);
 	TextOut(hDC, 10, 200, "numar:", 6);
 	TextOut(hDC, 10, 300, "nume:", 5);
 	TextOut(hDC, 10, 400, "Introduceti numar:", 18);
